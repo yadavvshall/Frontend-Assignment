@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="em">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Personal Protfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Work Experience</a></li>
+            <li><a href="#protfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-end Developer</p>
+          <h1>
+            Hi, I'm <span>Vishal</span><br />
+            Yadav From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!---------------About----------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/background.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-tittle">About Me</h1>
+            <p>
+              Dedicated Instrumentation Engineer skilled in Java, C++, and SQL,
+              with a strong foundation in web development and automation.
+              Capgemini-trained in Java, Spring, and React, eagerto contribute
+              innovative solutions
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web development</span><br />Html, Css, JavaScript,
+                  Reactjs
+                </li>
+                <li><span>Programming Languages</span><br />Java, MYSql</li>
+                <li>
+                  <span>Automation Technologies</span><br />Robotics, IoT
+                  Systems, Networking
+                </li>
+                <li><span>Database</span><br />MongoDB</li>
+                <li>
+                  <span>Tools</span><br />Git, LATEX, MatLab, LabView, MicroSoft
+                  Office
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Application Engineer</span><br />Avon Building Solution
+                  Pvt Ltd
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Mvp's KBTCOE</span><br />
+                  BE(Instrumentstion & Control Engineering)- SGPA : 8.6
+                </li>
+                <li><span>C.M.C.S College</span><br />HSC - Per : 62.46</li>
+                <li>
+                  <span>Sahaj Blossom High School</span><br />SSC - Per : 73.2
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------Services----------------------->
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-tittle">Work Experience</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>
+              Application Engineer <span><h6>July 2023- Aug 2023</h6></span>
+            </h2>
+            <p>
+              • Managed networking, access control systems, and smart building
+              integration using TCP/IP and VLANs. <br />• The commissioning of
+              the system was performed by using software tools like Netx
+              Automation, I app, Bootloader, and Communication Software etc
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>
+              Full Stack Wb development Intern
+              <span><h6>Aug 2023 - Sep 2023</h6></span>
+            </h2>
+            <p>
+              "I served as a Full Stack Web Intern at Bharat, gaining hands-on
+              experience in web development and contributing to impactful
+              projects.".
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>
+              C2TC TRAINING PROGRAM- CAPGEMINI
+              <span><h6>Oct 2022 - Jan 2023</h6></span>
+            </h2>
+            <p>
+              • Introduced technologies: SQL, Core Java 8, JPA with Hibernate,
+              GIT, Spring 5.0, Spring Boot, HTML5, CSS3, JavaScript, TypeScript,
+              React JS, soft skills
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------Protfolio----------------------->
+    <div id="protfolio">
+      <div class="container">
+        <h1 class="sub-tittle">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/img.png" />
+            <div class="layer">
+              <h3>Vite Blog with Appwrite & Vercel</h3>
+              <p>
+                •Built and deployed a Vite React blog app with Appwrite on
+                Vercel, achieving a 20% improvement in page load times for
+                optimal performance. <br />
+                •Implemented a seamless user experience, allowing users to
+                easily create, edit, & delete posts within the application.
+              </p>
+              <a href="https://appwrite-blog-xi.vercel.app/"
+                ><i class="fas fa-external-linl-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/img4.jpg" />
+            <div class="layer">
+              <h3>Job Portal</h3>
+              <p>
+                • Created an Online Job Portal using React & Firebase, enabling
+                users to effortlessly search & browse job listings. <br />
+                • Implemented real-time data updates from Firebase Firestore for
+                accurate & current job information
+              </p>
+              <a href="https://github.com/yadavvshall/Job-Portal"
+                ><i class="fas fa-external-linl-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/ty.jpg" />
+            <div class="layer">
+              <h3>INSTAGRAM & GOOGLE DRIVE CLONE</h3>
+              <p>
+                Created HTML and CSS based clones of Instagram and Google Drive,
+                showcasing adeptness in web development and design.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1kz2slQr93PyJKMEAOiW4D8MmY8jV01TQ/view"
+                ><i class="fas fa-external-linl-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!------------Contact----------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-tittle">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>yadavvshall@gmail.com</p>
+            <p><i class="fas fa-phone-sqaure-alt"></i>8668279388</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href=""><i class="fab fa-twitter-square"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/Vishal Yadav_Resume.pdf" download class="btn btn2"
+              >Download Cv</a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+              name="submit-to-google-sheet"
+              action="https://script.google.com/macros/s/AKfycbzn-vjZz_z-jAA9cVwzH438C7A8nxfz4isFXkBSMM-uMocKpAKSuhSjPSHc8kQ2Q92P/exec"
+              method="POST"
+            >
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright @ Vishal. Made with <i class="fas fa-heaart"></i> my
+          Learning
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
